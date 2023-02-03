@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto de Elamoreno - Lista de productos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="lista-productos">
+    <div class="lista-head">
+      <div>Producto</div>
+      <div>Cantidad</div>
+      <div>Precio</div>
+    </div>
+    <div id="miListaProductos" class="lista-body"></div>
+  </div>
+</body>
+<script>
+  const productos = [
+    {
+      nombreProducto: "Camiseta",
+      qty: 100,
+      precio: 45600
+    }
+  ]
+  var wrapper = document.getElementById("miListaProductos");
+
+  var listaProductos = '';
+
+  for (var i = 0; i < productos.length; i++) {
+    listaProductos += `<div>${productos[i].nombreProducto}</div><div>${productos[i].qty}</div><div>${productos[i].precio}</div>`
+  }
+
+  wrapper.innerHTML = listaProductos
+</script>
+
+</html>

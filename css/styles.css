@@ -1,0 +1,19 @@
+.lista-productos {
+  font-family: sans-serif;
+  font-size: x-large;
+}
+
+.lista-productos .lista-head {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 15px 0;
+  background-color: cadetblue;
+  color: aliceblue;
+}
+
+.lista-body {
+  display: flex;
+  justify-content: space-around;
+  font-size: medium;
+}
